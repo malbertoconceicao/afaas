@@ -8,7 +8,7 @@ body {
   display: flex;
 }
 .container {
-  width: 1024px;
+  max-width: 1200px;
   margin: auto;
 }
 header {
@@ -18,28 +18,31 @@ header {
   background-position: center;
 }
 nav {
-  margin-top: 10px;
   background-color: #bca869;
-  height: 50px;
 }
 nav ul {
-  width: 1024px;
+  max-width: 1200px;
   margin: auto;
   display: flex;
   padding-inline-start: 0px;
 }
 nav ul li {
   list-style: none;
+  display: flex;
 }
 nav ul li a {
   text-decoration: none;
   color: #ffffff;
-  line-height: 50px;
-  padding: 14px;
+  line-height: 10px;
+  justify-content: center;
 }
-nav ul li a:hover {
-  background-color: #eed89f;
-  color: #423c26;
+nav ul li a::after {
+  content: " ";
+  width: 2px;
+  height: 30px;
+  margin: 0px 10px 0px 10px;
+  background-color: #ffffff;
+  display: inline-block;
 }
 .slide {
   width: 70%;
