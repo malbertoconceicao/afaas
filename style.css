@@ -19,6 +19,7 @@ header {
 }
 nav {
   background-color: #bca869;
+  height: 50px;
 }
 nav ul {
   max-width: 1200px;
